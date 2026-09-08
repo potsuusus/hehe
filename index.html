@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For You 💌</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating hearts -->
+    <div class="hearts">
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+    </div>
+
+    <!-- Opening Screen -->
+    <main class="intro" id="intro">
+
+        <div class="intro-content">
+
+            <p class="small-text">A little something for you...</p>
+
+            <h1>Happy Birthday, Love! ♡</h1>
+
+            <p class="subtitle">
+                I made this just for you.
+            </p>
+
+            <button class="open-btn" onclick="openLetter()">
+                Open your letter
+                <span>💌</span>
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <!-- Letter Section -->
+    <section class="letter-section" id="letterSection">
+
+        <div class="envelope-container">
+
+            <div class="envelope" id="envelope">
+
+                <div class="envelope-back"></div>
+
+                <div class="letter-paper">
+
+                    <div class="letter-content">
+
+                        <p class="greeting">
+                            Happy birthday, love! ♡
+                        </p>
+
+                        <p>
+                            I just wanna say that I hope you’ll have a great
+                            and memorable day ngayon.
+                        </p>
+
+                        <p>
+                            Thank you for always, always being there for me,
+                            and for all the little things you do that always
+                            make me happy.
+                        </p>
+
+                        <p>
+                            I’m really grateful to have you in my life,
+                            and I’m especially grateful to your family.
+                            Tito, Tita, Kuya Mark, and Ate Erie for always
+                            making my days special too.
+                        </p>
+
+                        <p>
+                            I just want you to know that you all mean so much
+                            to me, as in sobra.
+                        </p>
+
+                        <p>
+                            I’ll always be here to support you and cheer you
+                            on in everything you do in life.
+                        </p>
+
+                        <p>
+                            I hope this year brings you lots of happiness,
+                            good memories, and everything you deserve.
+                        </p>
+
+                        <p class="ending">
+                            Happy birthday ulit, love! ♡
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="envelope-front"></div>
+
+                <div class="envelope-flap"></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Continue Button -->
+        <div class="continue-container" id="continueContainer">
+
+            <button class="continue-btn" onclick="showMemory()">
+                One more thing... ♡
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Memory Section -->
+    <section class="memory-section" id="memorySection">
+
+        <div class="memory-content">
+
+            <p class="memory-small">
+                One of my favorite memories ♡
+            </p>
+
+            <h2>A little piece of you</h2>
+
+            <div class="photo-frame">
+
+                <!--
+                    Put your photo inside the images folder
+                    and name it: our-photo.jpg
+                -->
+
+                <img src="images/our-photo.jpg"
+                     alt="A memory of us"
+                     onerror="this.style.display='none'; document.getElementById('photoPlaceholder').style.display='flex';">
+
+                <div class="photo-placeholder" id="photoPlaceholder">
+                    <span>📷</span>
+                    <p>Our photo goes here ♡</p>
+                </div>
+
+            </div>
+
+            <p class="final-message">
+                I'm really happy that I get to make memories with you.
+                Here's to more birthdays, more memories, and more moments
+                together. ♡
+            </p>
+
+            <div class="final-heart">
+                ♥
+            </div>
+
+            <p class="forever-text">
+                Happy Birthday, love.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
