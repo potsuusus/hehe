@@ -2,75 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>Happy Birthday, Love ♡</title>
+    <title>For You 💌</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap"
-        rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         INTRO
-    ========================== -->
+    <!-- Floating hearts -->
+    <div class="hearts">
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+    </div>
 
-    <section class="intro" id="intro">
+    <!-- Opening Screen -->
+    <main class="intro" id="intro">
 
         <div class="intro-content">
 
-            <p class="small-text">
-                A little something for you...
-            </p>
+            <p class="small-text">A little something for you...</p>
 
-            <h1>
-                Happy Birthday,<br>
-                Love! ♡
-            </h1>
+            <h1>Happy Birthday, Love! ♡</h1>
 
-            <p class="intro-subtitle">
+            <p class="subtitle">
                 I made this just for you.
             </p>
 
-            <button class="open-button" onclick="openLetter()">
-                Open your letter 💌
+            <button class="open-btn" onclick="openLetter()">
+                Open your letter
+                <span>💌</span>
             </button>
 
         </div>
 
-    </section>
+    </main>
 
 
-    <!-- =========================
-         LETTER
-    ========================== -->
-
+    <!-- Letter Section -->
     <section class="letter-section" id="letterSection">
-
-        <div class="letter-title">
-            <p>For you, with love ♡</p>
-        </div>
 
         <div class="envelope-container">
 
             <div class="envelope" id="envelope">
 
                 <div class="envelope-back"></div>
-
-
-                <!-- LETTER PAPER -->
 
                 <div class="letter-paper">
 
@@ -121,13 +105,7 @@
 
                 </div>
 
-
-                <!-- FRONT OF ENVELOPE -->
-
                 <div class="envelope-front"></div>
-
-
-                <!-- FLAP -->
 
                 <div class="envelope-flap"></div>
 
@@ -136,14 +114,10 @@
         </div>
 
 
-        <!-- CONTINUE BUTTON -->
-
+        <!-- Continue Button -->
         <div class="continue-container" id="continueContainer">
 
-            <button
-                class="continue-button"
-                onclick="showMemory()"
-            >
+            <button class="continue-btn" onclick="showMemory()">
                 One more thing... ♡
             </button>
 
@@ -152,98 +126,53 @@
     </section>
 
 
-    <!-- =========================
-         MEMORY / PHOTO
-    ========================== -->
-
+    <!-- Memory Section -->
     <section class="memory-section" id="memorySection">
 
         <div class="memory-content">
 
-            <p class="small-text">
+            <p class="memory-small">
                 One of my favorite memories ♡
             </p>
 
-            <h2>
-                Us.
-            </h2>
-
-
-            <!-- PHOTO -->
+            <h2>A little piece of us</h2>
 
             <div class="photo-frame">
 
                 <!--
-                    IMPORTANT:
-                    Relative path works on both:
-                    Live Server
-                    and GitHub Pages
+                    Put your photo inside the images folder
+                    and name it: Our-photo.jpg
                 -->
 
-                <img
-                    src="./images/Our-photo.jpg"
-                    alt="Our-photo"
-                    class="Our-photo"
-                    onerror="this.style.display='none'; document.getElementById('photoPlaceholder').style.display='flex';"
-                >
+                <img src="images/Our-photo.jpg"
+                     alt="A memory of us"
+                     onerror="this.style.display='none'; document.getElementById('photoPlaceholder').style.display='flex';">
 
-                <div
-                    class="photo-placeholder"
-                    id="photoPlaceholder"
-                    style="display: none;"
-                >
-                    <span>♡</span>
-                    <p>
-                        Add our-photo.jpg<br>
-                        inside the images folder
-                    </p>
+                <div class="photo-placeholder" id="photoPlaceholder">
+                    <span>📷</span>
+                    <p>Our photo goes here ♡</p>
                 </div>
 
             </div>
 
+            <p class="final-message">
+                I'm really happy that I get to make memories with you.
+                Here's to more birthdays, more memories, and more moments
+                together. ♡
+            </p>
 
-            <!-- FINAL MESSAGE -->
-
-            <div class="final-message">
-
-                <p>
-                    I'm really happy that I get to make memories
-                    with you.
-                </p>
-
-                <p>
-                    Here's to more birthdays, more memories,
-                    and more moments together. ♡
-                </p>
-
-                <p class="final-ending">
-                    Happy Birthday, love. ♡
-                </p>
-
+            <div class="final-heart">
+                ♥
             </div>
+
+            <p class="forever-text">
+                Happy Birthday, love.
+            </p>
 
         </div>
 
     </section>
 
-
-    <!-- =========================
-         FLOATING HEARTS
-    ========================== -->
-
-    <div class="hearts">
-
-        <span>♡</span>
-        <span>♡</span>
-        <span>♡</span>
-        <span>♡</span>
-        <span>♡</span>
-        <span>♡</span>
-
-    </div>
-
-
-    <!-- JAVASCRIPT -->
 
     <script src="script.js"></script>
 
